@@ -58,7 +58,9 @@ function game(){
     let cpuScore = 0;
     let playerScore = 0;
     for (let i = 0; i < 5; i++){
-        let win = playRound(playerSelection, computerSelection)
+        let rawInput = prompt("Please enter either \"rock\", \"paper\", or \"scissors\"");
+        let playerSelection = win.toLowerCase();
+        let win = playRound(playerSelection, computerSelection);
         
         if(win == "computer"){
             cpuScore++;
@@ -68,13 +70,10 @@ function game(){
         }
         else{
         }
-        console.log("The winner is " + win)
+        console.log("The winner is " + win);
     }
-    console.log("CPU Wins : " + cpuScore.toString())
-    console.log("Player Wins : " + playerScore.toString())
+    console.log("CPU Wins : " + cpuScore.toString());
+    console.log("Player Wins : " + playerScore.toString());
 }
 
-let rawInput = prompt("Please enter either \"rock\", \"paper\", or \"scissors\"");
-
-const playerSelection = "rock";
 const computerSelection = getComputerChoice();
