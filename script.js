@@ -1,5 +1,7 @@
 function getComputerChoice(){
-    let num = Math.random() * (3-1) + 1;
+    min = Math.ceil(1);
+    max = Math.floor(4);
+    let num = Math.floor(Math.random() * (max - min) + min);
 
     if (num == 1){
         return "rock";
