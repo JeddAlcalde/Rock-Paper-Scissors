@@ -66,6 +66,6 @@ function game(){
         console.log(playerSelection);
         console.log(computerSelection);
         let win = playRound(playerSelection, computerSelection);
-        console.log("The winner is " + win + " on round " + i.toString);
+        console.log("The winner is " + win);
     }
 }
