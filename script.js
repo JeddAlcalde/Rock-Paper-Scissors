@@ -76,12 +76,11 @@ buttons.forEach((button) => {
     button.addEventListener("click", function(e) {
         alert(button.id);
         console.log(e);
-        console.log(e.target);
-        console.log(button);
+        console.log(button.id);
 
-        let playerSelect = e.target.innerText;
+        let playerSelect = e.id;
 
-        console.log(e.target.innerText);
+        console.log(playerSelect);
 
         return playRound(playerSelect, getComputerChoice());
     })
