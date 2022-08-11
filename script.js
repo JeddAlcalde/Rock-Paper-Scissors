@@ -78,7 +78,7 @@ buttons.forEach((button) => {
         console.log(e);
         console.log(button.id);
 
-        let playerSelect = e.id;
+        let playerSelect = e.id.toLowerCase;
 
         console.log(playerSelect);
 
