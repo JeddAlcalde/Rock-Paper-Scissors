@@ -69,3 +69,20 @@ function game(){
         console.log("The winner is " + win);
     }
 }
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+    button.addEventListener("click", function(e) {
+        alert(button.id);
+        console.log(e);
+        console.log(e.target);
+        console.log(button);
+
+        let playerSelect = e.target.innerText;
+
+        console.log(e.target.innerText);
+
+        return playRound(playerSelect, getComputerChoice());
+    })
+});
